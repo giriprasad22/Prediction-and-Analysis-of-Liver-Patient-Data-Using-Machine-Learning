@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Liver Prediction </title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<style>
+
+select { 
+	width: 100%; 
+	margin-bottom: 10px; 
+	background: #fff;
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	color: #092756;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+}
+.login{
+top: 20%;
+}
+</style>
+</head>
+
+<body>
+ <div class="login">
+	  <h4>Welcome to liver Prediction Page . Please fill the Detailes </h4>
+
+
+     <!-- Main Input For Receiving Query to Model -->
+    <form action= "/y_predict" method="post">
+		 <input type="text" name="Gender" placeholder="0-female , 1 - male" required="required" />
+		
+        
+
+    <div>
+        <input type="text" name="Age" placeholder="Age" required="required" />
+        <input type="text" name="Total_Bilirubin" placeholder="Total_Bilirubin" required="required" />
+        <input type="text" name="Direct_Bilirubin" placeholder="Direct_Bilirubin" required="required" />
+        <input type="text" name="Alkaline_Phosphotase" placeholder="Alkaline_Phosphotase" required="required" />
+        <input type="text" name="Alamine_Aminotransferase" placeholder="Alamine_Aminotransferase" required="required" />
+        <input type="text" name="Aspartate_Aminotransferase" placeholder="Aspartate_Aminotransferase" required="required" />
+        <input type="text" name="Total_Protiens" placeholder="Total_Protiens" required="required" />
+        <input type="text" name="Albumin" placeholder="Albumin" required="required" />
+        <input type="text" name="Albumin_and_Globulin_Ratio" placeholder="Albumin_and_Globulin_Ratio" required="required" />
+        <button type="submit" class="btn btn-warning btn-block btn-large">Predict</button>
+    </div>
+
+    {{ prediction_text }}
+   <br>
+   <br>
+
+ </div>
+
+
+</body>
+</html>
+
