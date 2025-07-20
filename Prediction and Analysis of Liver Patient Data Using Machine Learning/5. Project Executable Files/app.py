@@ -30,7 +30,7 @@ def prediction():
     
     prediction = model.predict(data)
     
-    if(prediction < 0.5):
+    if(prediction > 0.5):
         return render_template("index.html",prediction_text = "You have a liver disease problem , you must go to doctor" )
     else:
         return render_template("index.html",prediction_text = "You dont have a liver disease problem" )
