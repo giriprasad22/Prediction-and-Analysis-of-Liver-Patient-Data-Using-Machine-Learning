@@ -40,7 +40,7 @@ git clone https://github.com/giriprasad22/Prediction-and-Analysis-of-Liver-Patie
 
 cd Prediction-and-Analysis-of-Liver-Patient-Data-Using-Machine-Learning
 
-Install dependencies
+## 2 Install dependencies
 
 bash
 
@@ -52,7 +52,7 @@ bash
 
 pip install flask pandas numpy scikit-learn tensorflow matplotlib
 
-Run the application
+## 3 Run the application
 
 bash
 
@@ -60,9 +60,9 @@ python app.py
 
 The web interface will launch at http://localhost:5000
 
-🔍 Understanding the Components
+### 🔍 Understanding the Components
 
-Data Files
+## Data Files
 
 indian_liver_patient.csv: Original dataset from Kaggle
 
@@ -70,7 +70,7 @@ liver.h5: Pretrained Keras model (TensorFlow backend)
 
 liver_analysis.pkl: Serialized scikit-learn model/analysis object
 
-Code Files
+## Code Files
 
 project.ipynb: Contains complete EDA, feature engineering, and model training
 
@@ -82,27 +82,27 @@ app.py: Flask web application with these routes:
 
 /analysis: Data visualization dashboard
 
-🛠️ Development Workflow
+## 🛠️ Development Workflow
 
-Data Exploration:
+1 Data Exploration:
 
 Open project.ipynb in Jupyter Notebook
 
 Contains all data preprocessing steps
 
-Model Training:
+2 Model Training:
 
 Notebook includes model training code
 
 Outputs saved as liver.h5 (Keras) and liver_analysis.pkl
 
-Web Interface:
+3 Web Interface:
 
 Customize templates in /templates
 
 Modify styles in /static/css
 
-📊 Sample Output
+## 📊 Sample Output
 
 After running app.py, you should see:
 
@@ -112,7 +112,7 @@ Prediction results page with risk probability
 
 Analysis dashboard with visualizations
 
-🤝 Contributing
+## 🤝 Contributing
 
 Contributions welcome! Please:
 
