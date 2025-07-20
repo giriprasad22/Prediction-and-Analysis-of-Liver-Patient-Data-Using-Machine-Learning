@@ -34,7 +34,7 @@ A machine learning system for predicting liver disease risk from patient data, f
 - pip package manager
 
 ### 1. Clone the repository
-```bash
+bash
 git clone https://github.com/giriprasad22/Prediction-and-Analysis-of-Liver-Patient-Data-Using-Machine-Learning.git
 cd Prediction-and-Analysis-of-Liver-Patient-Data-Using-Machine-Learning
 
