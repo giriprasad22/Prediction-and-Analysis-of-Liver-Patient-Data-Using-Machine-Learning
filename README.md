@@ -35,26 +35,35 @@ A machine learning system for predicting liver disease risk from patient data, f
 
 ### 1. Clone the repository
 bash
+
 git clone https://github.com/giriprasad22/Prediction-and-Analysis-of-Liver-Patient-Data-Using-Machine-Learning.git
+
 cd Prediction-and-Analysis-of-Liver-Patient-Data-Using-Machine-Learning
 
 Install dependencies
+
 bash
+
 pip install -r requirements.txt
 
 (Note: If requirements.txt is missing, install these manually:)
 
 bash
+
 pip install flask pandas numpy scikit-learn tensorflow matplotlib
 
 Run the application
+
 bash
+
 python app.py
 
 The web interface will launch at http://localhost:5000
 
 🔍 Understanding the Components
+
 Data Files
+
 indian_liver_patient.csv: Original dataset from Kaggle
 
 liver.h5: Pretrained Keras model (TensorFlow backend)
@@ -62,6 +71,7 @@ liver.h5: Pretrained Keras model (TensorFlow backend)
 liver_analysis.pkl: Serialized scikit-learn model/analysis object
 
 Code Files
+
 project.ipynb: Contains complete EDA, feature engineering, and model training
 
 app.py: Flask web application with these routes:
@@ -73,6 +83,7 @@ app.py: Flask web application with these routes:
 /analysis: Data visualization dashboard
 
 🛠️ Development Workflow
+
 Data Exploration:
 
 Open project.ipynb in Jupyter Notebook
@@ -92,6 +103,7 @@ Customize templates in /templates
 Modify styles in /static/css
 
 📊 Sample Output
+
 After running app.py, you should see:
 
 Interactive input form at homepage
@@ -101,6 +113,7 @@ Prediction results page with risk probability
 Analysis dashboard with visualizations
 
 🤝 Contributing
+
 Contributions welcome! Please:
 
 Fork the repository
